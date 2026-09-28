@@ -1,0 +1,8 @@
+# Only appointment.php is public. Config, local overrides and logs are private.
+Options -Indexes
+<FilesMatch "^(config|config\.local)\.php$">
+  Require all denied
+</FilesMatch>
+<FilesMatch "\.(log|sql|md|ini)$">
+  Require all denied
+</FilesMatch>
