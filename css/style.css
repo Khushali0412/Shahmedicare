@@ -921,7 +921,7 @@ a.utility__item:hover { color: var(--c-ivory); }
   margin-top: clamp(2.5rem, 5vw, 4rem);
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
-  grid-template-rows: repeat(3, clamp(160px, 17vw, 228px));
+  grid-template-rows: repeat(2, clamp(160px, 17vw, 228px));
   grid-template-areas:
     "a a a b b"
     "a a a c d"
