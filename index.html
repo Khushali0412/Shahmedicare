@@ -26,7 +26,8 @@
   <meta name="twitter:description" content="Compassionate, personal physician care in Ahmedabad.">
   <meta name="twitter:image" content="https://www.example.com/assets/images/og-image.jpg">
 
-  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/icons/favicon-64.png" type="image/png" sizes="64x64">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet"
@@ -46,8 +47,8 @@
         "@id": "https://www.example.com/#clinic",
         "name": "Shah Medicare Centre & Hospital",
         "url": "https://www.example.com/",
-        "image": "https://www.example.com/assets/images/reception-1.jpg",
-        "logo": "https://www.example.com/assets/icons/logo.svg",
+        "image": "https://www.example.com/assets/images/waiting_area.webp",
+        "logo": "https://www.example.com/assets/images/logo-badge-320.png",
         "slogan": "Your Health, Our Priority",
         "medicalSpecialty": ["Cardiovascular", "PrimaryCare"],
         "address": {
@@ -313,18 +314,15 @@
   <!-- ========== HEADER ========== -->
   <header class="site-header" data-header>
     <div class="container">
-      <a class="brand" href="index.html" aria-label="Shah Medicare Centre &amp; Hospital — Home">
-        <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true">
-          <circle cx="24" cy="24" r="23" fill="#143d36" />
-          <circle cx="24" cy="24" r="19.5" fill="none" stroke="#c3a36c" stroke-width=".8" />
-          <text x="24" y="30.5" text-anchor="middle" font-family="'Source Serif 4', Georgia, serif" font-size="17"
-            font-weight="600" fill="#f8f4ec">SH</text>
-          <path d="M24 9.2v5M21.5 11.7h5" stroke="#c3a36c" stroke-width="1.4" stroke-linecap="round" />
-        </svg>
-        <span class="brand__text">
-          <span class="brand__name">Shah Medicare</span>
-          <span class="brand__sub">Centre &amp; Hospital · Ahmedabad</span>
-        </span>
+   <a class="brand" href="index.html" aria-label="Shah Medicare Centre and Hospital — Home">
+        <picture class="brand__logo brand__logo--dark">
+          <source type="image/webp" srcset="assets/images/logo-full.webp">
+          <img src="assets/images/logo-full.png" width="400" height="300" alt="Shah Medicare Centre and Hospital — Dr. Nishant Shah, MRCPUK (Medicine), Ahmedabad" decoding="async" fetchpriority="high">
+        </picture>
+        <picture class="brand__logo brand__logo--light" aria-hidden="true">
+          <source type="image/webp" srcset="assets/images/logo-full-light.webp">
+          <img src="assets/images/logo-full-light.png" width="400" height="300" alt="" decoding="async" loading="lazy">
+        </picture>
       </a>
 
       <nav class="nav" aria-label="Primary">
@@ -387,7 +385,8 @@
             </h1>
             <div class="hero__doctor" data-hero style="--d:380ms">
               <strong>Dr. Nishant Girishkumar Shah</strong>
-              <span>MRCPUK (Medicine) · Physician</span>
+              <span>14+
+years of experience · Physician</span>
             </div>
             <p class="hero__desc" data-hero style="--d:480ms">Unhurried, personal consultations for blood pressure,
               heart health, diabetes and long-term conditions — with on-site ECG and inpatient care at Shah Medicare
@@ -1038,10 +1037,10 @@
 
         <ul class="gallery" role="list" data-gallery aria-label="Hospital photographs">
           <li data-reveal="scale"><button type="button" class="g-item" data-lightbox
-              data-src="assets/images/reception-1.jpg" data-caption="Reception &amp; waiting area" data-cat="Reception">
+              data-src="assets/images/waiting_area.webp" data-caption="Reception &amp; waiting area" data-cat="Reception">
               <picture>
-                <source type="image/webp" srcset="assets/images/reception-1.webp"><img
-                  src="assets/images/reception-1.jpg" width="728" height="442"
+                <source type="image/webp" srcset="assets/images/waiting_area.webp"><img
+                  src="assets/images/waiting_area.webp" width="728" height="442"
                   alt="Reception desk and waiting area with seating" loading="lazy" decoding="async">
               </picture>
               <span class="g-item__cap"><small>Reception</small>Reception &amp; waiting area</span>
@@ -1197,8 +1196,8 @@
         <div class="why__media">
           <div class="img-frame why__img" data-reveal="mask">
             <picture>
-              <source type="image/webp" srcset="assets/images/doctor-desk-wide.webp">
-              <img src="assets/images/doctor-desk-wide.jpg" width="728" height="440"
+              <source type="image/webp" srcset="assets/images/why_us.png">
+              <img src="assets/images/why_us.png" width="728" height="440"
                 alt="Dr. Shah seated at his desk in the consultation room" loading="lazy" decoding="async">
             </picture>
           </div>
@@ -1271,13 +1270,11 @@
                     <use href="#i-quote" />
                   </svg>
                   <blockquote>
-                    <p><span class="ph">[Approved patient testimonial #1 — paste the patient's own words here, exactly
-                        as they gave them.]</span></p>
+                    <p><span class="ph">I had an excellent experience at SMCH, Shah Medicare Centre and Hospital. The doctors are highly knowledgeable and provide accurate diagnosis and treatment for fever, diabetes, asthma, hypertension, and other health concerns. If you are looking for a trusted fever doctor in Vadaj Ahmedabad or a physician in Usmanpura Ahmedabad, this hospital offers professional and patient-focused care. The diabetologist and pulmonologist team carefully monitors chronic conditions and provides effective treatment plans. Their cardiologist doctors are also experienced and ensure thorough health assessments. SMCH is undoubtedly one of the most reliable diabetes hospitals in Vadaj and Usmanpura Ahmedabad, with courteous staff and well-maintained facilities.</span></p>
                   </blockquote>
                   <figcaption>
-                    <span class="t-avatar" aria-hidden="true">P1</span>
-                    <span><strong class="ph">[Patient name or initials]</strong><span class="ph">[Category, e.g. Blood
-                        pressure care]</span></span>
+                    <span class="t-avatar" aria-hidden="true">CP</span>
+                    <span><strong class="ph">Chandni Panchal</strong><span class="ph"></span></span>
                   </figcaption>
                 </figure>
                 <figure class="t-slide" role="group" aria-roledescription="slide">
@@ -1285,13 +1282,12 @@
                     <use href="#i-quote" />
                   </svg>
                   <blockquote>
-                    <p><span class="ph">[Approved patient testimonial #2 — keep it in the patient's own words.]</span>
+                    <p><span class="ph">SMCH, Shah Medicare Centre and Hospital provides exceptional healthcare services with a team of experienced physicians and specialists. I visited for diabetes and blood pressure management, and the diabetologist explained everything in detail while creating a personalized treatment plan. Patients looking for a hypertension doctor in Vadaj Ahmedabad, a diabetologist in Usmanpura Ahmedabad, or an asthma doctor in Vadaj Ahmedabad can confidently choose this hospital. The medical staff is attentive, appointments are managed efficiently, and the overall patient experience is very comfortable. Their commitment to quality healthcare makes them a preferred choice in the area.</span>
                     </p>
                   </blockquote>
                   <figcaption>
-                    <span class="t-avatar" aria-hidden="true">P2</span>
-                    <span><strong class="ph">[Patient name or initials]</strong><span class="ph">[Category, e.g. Cardiac
-                        consultation]</span></span>
+                    <span class="t-avatar" aria-hidden="true">KR</span>
+                    <span><strong class="ph">Kuntal R. Sathwara</strong></span>
                   </figcaption>
                 </figure>
                 <figure class="t-slide" role="group" aria-roledescription="slide">
@@ -1299,12 +1295,39 @@
                     <use href="#i-quote" />
                   </svg>
                   <blockquote>
-                    <p><span class="ph">[Approved patient testimonial #3.]</span></p>
+                    <p><span class="ph">Dr. Nishant is an excellent doctor, and the way he handled my mother’s case is truly commendable. Three months ago, my mother’s fasting blood sugar (FBS) level was 360, and today her reports are showing 100. The improvement has been remarkable and honestly feels unbelievable to me. We are truly grateful for his guidance, treatment, and care throughout this journey.
+Fully re              commend this doctor!</span></p>
                   </blockquote>
                   <figcaption>
-                    <span class="t-avatar" aria-hidden="true">P3</span>
-                    <span><strong class="ph">[Patient name or initials]</strong><span class="ph">[Category, e.g.
-                        Inpatient care]</span></span>
+                    <span class="t-avatar" aria-hidden="true">AS</span>
+                    <span><strong class="ph">Akshay shah</strong></span>
+                  </figcaption>
+                </figure>
+
+                <figure class="t-slide" role="group" aria-roledescription="slide">
+                  <svg class="icon t-quote" aria-hidden="true">
+                    <use href="#i-quote" />
+                  </svg>
+                  <blockquote>
+                    <p><span class="ph">Highly satisfied with the treatment and care at SMCH Hospital by Dr. Nishant Shah. One of the best fever doctors and physicians in Vadaj and Usmanpura Ahmedabad, providing accurate diagnosis and effective treatment for fever, diabetes, asthma, hypertension, and chest-related problems. The staff is supportive, the hospital environment is clean, and patients receive proper attention with expert medical guidance. Strongly recommended for anyone looking for a diabetologist, pulmonologist, cardiologist, or general physician in Ahmedabad </span></p>
+                  </blockquote>
+                  <figcaption>
+                    <span class="t-avatar" aria-hidden="true">BS</span>
+                    <span><strong class="ph">Bhavesh Shah</strong></span>
+                  </figcaption>
+                </figure>
+
+                <figure class="t-slide" role="group" aria-roledescription="slide">
+                  <svg class="icon t-quote" aria-hidden="true">
+                    <use href="#i-quote" />
+                  </svg>
+                  <blockquote>
+                    <p><span class="ph">
+                      Dr. thank you for explained every step of my treatment plan clearly". "He was friendly, clear in communication and explained the problem in detail</span></p>
+                  </blockquote>
+                  <figcaption>
+                    <span class="t-avatar" aria-hidden="true">NH</span>
+                    <span><strong class="ph">Namrata Hingu</strong></span>
                   </figcaption>
                 </figure>
               </div>
@@ -1312,7 +1335,7 @@
           </div>
           <div class="t-controls">
             <div class="t-dots" data-slider-dots></div>
-            <span class="t-count" data-slider-count aria-hidden="true">01 / 03</span>
+            <span class="t-count" data-slider-count aria-hidden="true">01 / 05</span>
             <div class="t-arrows">
               <button class="round-btn" type="button" data-slider-prev aria-label="Previous testimonial"><svg
                   class="icon" aria-hidden="true">
@@ -1606,16 +1629,11 @@
       </div>
       <div class="footer__grid">
         <div class="footer__brand">
-          <a class="brand" href="index.html" aria-label="Shah Medicare Centre &amp; Hospital — Home">
-            <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true">
-              <circle cx="24" cy="24" r="23" fill="#f8f4ec" />
-              <circle cx="24" cy="24" r="19.5" fill="none" stroke="#a8834b" stroke-width=".8" /><text x="24" y="30.5"
-                text-anchor="middle" font-family="'Source Serif 4', Georgia, serif" font-size="17" font-weight="600"
-                fill="#143d36">SH</text>
-              <path d="M24 9.2v5M21.5 11.7h5" stroke="#a8834b" stroke-width="1.4" stroke-linecap="round" />
-            </svg>
-            <span class="brand__text"><span class="brand__name">Shah Medicare</span><span class="brand__sub">Centre
-                &amp; Hospital · Ahmedabad</span></span>
+          <a class="footer__logo" href="index.html" aria-label="Shah Medicare Centre and Hospital — Home">
+            <picture>
+              <source type="image/webp" srcset="assets/images/logo-badge-320.webp">
+              <img src="assets/images/logo-badge-320.png" width="320" height="322" alt="Shah Medicare Centre and Hospital — Your health, our priority" loading="lazy" decoding="async">
+            </picture>
           </a>
           <p>Physician consultations, on-site ECG and inpatient care with Dr. Nishant Girishkumar Shah, MRCPUK
             (Medicine). Your health, our priority.</p>
@@ -1664,8 +1682,6 @@
       </div>
     </div>
   </footer>
-  <!-- 
-  <a class="btn btn--primary float-cta" href="#appointment" data-float-cta><span class="pulse-dot" aria-hidden="true"></span>Book Appointment</a> -->
 
   <nav class="action-bar" aria-label="Quick actions" data-action-bar>
     <a href="tel:+918980534718"><svg class="icon" aria-hidden="true">
