@@ -57,7 +57,7 @@
   /* Space & shape */
   --container: 1240px;
   --gutter: clamp(16px, 4vw, 40px);
-  --sec-py: clamp(80px, 9vw, 144px);
+  --sec-py: clamp(50px, 7vw, 80px);
   --r-sm: 8px;
   --r-md: 14px;
   --r-lg: 20px;
