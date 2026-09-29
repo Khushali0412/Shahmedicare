@@ -620,7 +620,9 @@ a.utility__item:hover { color: var(--c-ivory); }
   gap: 1.25rem;
 }
 .trust-item { display: flex; align-items: center; gap: 0.9rem; }
-.trust-item .icon-disc { width: 44px; height: 44px; }
+.trust-item .icon-disc { width: 44px; height: 44px;    display: flex;
+    justify-content: center;
+    color: #0e2e29; }
 .trust-item .icon-disc .icon { width: 20px; height: 20px; }
 .trust-item strong { display: block; font-weight: 600; font-size: 0.95rem; color: var(--c-green-900); line-height: 1.3; }
 .trust-item span { display: block; font-size: 0.84rem; color: var(--c-muted); line-height: 1.4; }
@@ -1137,7 +1139,7 @@ a.utility__item:hover { color: var(--c-ivory); }
 .t-track { display: flex; transition: transform 700ms var(--ease-out); }
 .t-slide { flex: 0 0 100%; min-width: 0; display: grid; gap: 1.6rem; align-content: start; padding: clamp(1.8rem, 4.5vw, 3.4rem); }
 .t-quote { width: 44px !important; height: 44px !important; color: var(--c-gold-400); stroke-width: 1.2; }
-.t-slide blockquote p { font-family: var(--f-display); font-weight: 400; font-size: 14px; line-height: 1.38; color: var(--c-green-900); text-wrap: pretty; }
+.t-slide blockquote p { font-family: var(--f-display); font-weight: 400; font-size: 16px; line-height: 25px; color: var(--c-green-900); text-wrap: pretty; }
 .t-slide figcaption { display: flex; align-items: center; gap: 0.9rem; padding-top: 1.4rem; border-top: 1px solid var(--c-line); }
 .t-slide figcaption > span:last-child { display: grid; gap: 0.15rem; }
 .t-slide figcaption strong { font-weight: 600; color: var(--c-ink); }
@@ -1698,4 +1700,10 @@ a.qc-card:hover .icon-disc { background: var(--c-green-800); color: var(--c-gold
 }
 .section.services{
   overflow-x: hidden;
+}
+
+
+.section_line{
+  background: linear-gradient(90deg, var(--c-gold-400), var(--c-gold-500));
+  height: 2px;
 }
