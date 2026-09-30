@@ -1554,6 +1554,10 @@ a.qc-card:hover .icon-disc { background: var(--c-green-800); color: var(--c-gold
 }
 
 @media (max-width: 767px) {
+  .why__grid ,.consult__grid ,.about__grid{
+      flex-direction: column-reverse;
+    display: flex;
+  }
   :root { --header-h: 104px; --utility-h: 34px; --logo-h: 88px; }
   .site-header.is-scrolled { --header-h: 80px; --logo-h: 66px; }
   html { scroll-padding-top: 88px; }
